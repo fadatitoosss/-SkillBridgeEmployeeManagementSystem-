@@ -1,0 +1,515 @@
+2026-10-09 16:23:14,134 INFO employees REQUEST GET /llogin | User: oratilwe.s
+2026-10-09 16:23:14,461 INFO employees RESPONSE GET /llogin | Status: 404 | Time: 0.763s
+2026-10-09 16:23:35,041 INFO employees REQUEST GET /login | User: oratilwe.s
+2026-10-09 16:23:35,046 INFO employees RESPONSE GET /login | Status: 404 | Time: 0.656s
+2026-10-09 16:23:35,258 INFO employees REQUEST GET /login/ | User: oratilwe.s
+2026-10-09 16:23:35,878 INFO employees RESPONSE GET /login/ | Status: 200 | Time: 0.818s
+2026-10-09 16:24:05,680 INFO employees REQUEST POST /login/ | User: oratilwe.s
+2026-10-09 16:24:06,334 INFO employees RESPONSE POST /login/ | Status: 302 | Time: 0.708s
+2026-10-09 16:24:06,430 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-09 16:24:06,541 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.154s
+2026-10-09 16:25:49,091 INFO employees REQUEST GET /add/ | User: oratilwe.s
+2026-10-09 16:25:49,100 INFO employees.decorators.audit_log START add by oratilwe.s
+2026-10-09 16:25:49,445 INFO employees.decorators.audit_log END add status=200 345.35ms
+2026-10-09 16:25:49,447 INFO employees RESPONSE GET /add/ | Status: 200 | Time: 0.751s
+2026-10-09 16:27:32,312 INFO employees REQUEST POST /add/ | User: oratilwe.s
+2026-10-09 16:27:32,334 INFO employees.decorators.audit_log START add by oratilwe.s
+2026-10-09 16:27:32,849 INFO employees.decorators.audit_log END add status=200 514.15ms
+2026-10-09 16:27:32,849 INFO employees RESPONSE POST /add/ | Status: 200 | Time: 0.784s
+2026-10-09 16:27:46,707 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-09 16:27:46,754 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.070s
+2026-10-09 16:28:43,553 INFO employees REQUEST POST /delete/2/ | User: oratilwe.s
+2026-10-09 16:28:43,554 INFO employees.decorators.audit_log START delete by oratilwe.s
+2026-10-09 16:28:43,593 INFO employees.decorators.audit_log END delete status=302 39.08ms
+2026-10-09 16:28:43,594 INFO employees RESPONSE POST /delete/2/ | Status: 302 | Time: 0.093s
+2026-10-09 16:28:43,617 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-09 16:28:43,628 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.020s
+2026-10-09 16:32:38,070 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-09 16:32:38,134 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.504s
+2026-10-09 16:32:42,791 INFO employees REQUEST GET /.well-known/appspecific/com.chrome.devtools.json | User: oratilwe.s
+2026-10-09 16:32:42,804 INFO employees RESPONSE GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.062s
+2026-10-11 16:43:31,038 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-11 16:43:31,240 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.282s
+2026-10-11 16:43:31,734 INFO employees REQUEST GET /favicon.ico | User: oratilwe.s
+2026-10-11 16:43:31,743 INFO employees RESPONSE GET /favicon.ico | Status: 404 | Time: 0.042s
+2026-10-11 16:43:34,462 INFO employees REQUEST GET / | User: oratilwe.s
+2026-10-11 16:43:34,476 INFO employees RESPONSE GET / | Status: 200 | Time: 0.043s
+2026-10-11 16:43:42,137 INFO employees REQUEST POST /logout/ | User: oratilwe.s
+2026-10-11 16:43:42,169 INFO employees RESPONSE POST /logout/ | Status: 302 | Time: 0.050s
+2026-10-11 16:43:42,175 INFO employees REQUEST GET / | User: Anonymous
+2026-10-11 16:43:42,177 INFO employees RESPONSE GET / | Status: 302 | Time: 0.001s
+2026-10-11 16:43:42,184 INFO employees REQUEST GET /login/ | User: Anonymous
+2026-10-11 16:43:42,344 INFO employees RESPONSE GET /login/ | Status: 200 | Time: 0.160s
+2026-10-11 16:44:46,808 INFO employees REQUEST POST /login/ | User: Anonymous
+2026-10-11 16:44:47,882 INFO employees RESPONSE POST /login/ | Status: 302 | Time: 1.073s
+2026-10-11 16:44:47,920 INFO employees REQUEST GET / | User: oratilwe.s
+2026-10-11 16:44:47,936 INFO employees RESPONSE GET / | Status: 200 | Time: 0.034s
+2026-10-11 20:18:35,020 INFO employees REQUEST GET /.well-known/appspecific/com.chrome.devtools.json | User: oratilwe.s
+2026-10-11 20:18:35,021 INFO employees REQUEST GET / | User: oratilwe.s
+2026-10-11 20:18:35,049 INFO employees RESPONSE GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.589s
+2026-10-11 20:18:35,080 INFO employees RESPONSE GET / | Status: 200 | Time: 0.630s
+2026-10-11 20:23:23,005 INFO employees REQUEST GET / | User: oratilwe.s
+2026-10-11 20:23:23,260 INFO employees RESPONSE GET / | Status: 200 | Time: 0.366s
+2026-10-11 20:23:32,229 INFO employees REQUEST GET / | User: oratilwe.s
+2026-10-11 20:23:32,236 INFO employees RESPONSE GET / | Status: 200 | Time: 0.027s
+2026-10-11 20:23:51,429 INFO employees REQUEST POST /delete/6/ | User: oratilwe.s
+2026-10-11 20:23:51,439 INFO employees.decorators.audit_log START delete by oratilwe.s
+2026-10-11 20:23:51,503 INFO employees.decorators.audit_log END delete status=302 58.45ms
+2026-10-11 20:23:51,504 INFO employees RESPONSE POST /delete/6/ | Status: 302 | Time: 0.088s
+2026-10-11 20:23:51,520 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-11 20:23:51,531 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.019s
+2026-10-11 20:23:54,433 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-11 20:23:54,445 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.054s
+2026-10-11 20:23:55,512 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-11 20:23:55,522 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.042s
+2026-10-11 20:23:55,736 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-11 20:23:55,748 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.047s
+2026-10-11 20:23:57,725 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-11 20:23:57,736 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.050s
+2026-10-11 20:23:59,543 INFO employees REQUEST GET /add/ | User: oratilwe.s
+2026-10-11 20:23:59,544 INFO employees.decorators.audit_log START add by oratilwe.s
+2026-10-11 20:23:59,870 INFO employees.decorators.audit_log END add status=200 325.71ms
+2026-10-11 20:23:59,871 INFO employees RESPONSE GET /add/ | Status: 200 | Time: 0.354s
+2026-10-11 20:25:06,674 INFO employees REQUEST POST /add/ | User: oratilwe.s
+2026-10-11 20:25:06,676 INFO employees.decorators.audit_log START add by oratilwe.s
+2026-10-11 20:25:07,005 INFO employees.decorators.audit_log END add status=200 327.66ms
+2026-10-11 20:25:07,005 INFO employees RESPONSE POST /add/ | Status: 200 | Time: 0.372s
+2026-10-11 20:25:08,792 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-11 20:25:08,807 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.030s
+2026-10-11 20:28:27,569 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-11 20:28:27,672 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.135s
+2026-10-11 20:28:44,154 INFO employees REQUEST GET /edit/7 | User: oratilwe.s
+2026-10-11 20:28:44,154 INFO employees.decorators.audit_log START edit by oratilwe.s
+2026-10-11 20:28:44,207 INFO employees.decorators.audit_log END edit status=200 51.93ms
+2026-10-11 20:28:44,207 INFO employees RESPONSE GET /edit/7 | Status: 200 | Time: 0.073s
+2026-10-11 20:28:50,116 INFO employees REQUEST POST /edit/7 | User: oratilwe.s
+2026-10-11 20:28:50,118 INFO employees.decorators.audit_log START edit by oratilwe.s
+2026-10-11 20:28:50,256 INFO employees.decorators.audit_log END edit status=200 138.17ms
+2026-10-11 20:28:50,257 INFO employees RESPONSE POST /edit/7 | Status: 200 | Time: 0.174s
+2026-10-11 20:28:52,346 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-11 20:28:52,363 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.036s
+2026-10-11 20:42:19,204 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-11 20:42:19,460 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.312s
+2026-10-11 20:42:20,508 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-11 20:42:20,528 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.056s
+2026-10-11 20:44:21,866 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-11 20:44:21,899 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.127s
+2026-10-11 20:50:58,865 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-11 20:50:58,866 ERROR employees EXCEPTION GET /employees/ | Error: 'EmployeeService' object has no attribute 'get_card_statistics'
+Traceback (most recent call last):
+  File "C:\Users\ORATILWE.S\Documents\skillsbridge_ems\venv\Lib\site-packages\django\core\handlers\base.py", line 199, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ORATILWE.S\Documents\skillsbridge_ems\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\ORATILWE.S\Documents\skillsbridge_ems\employees\views.py", line 50, in index
+    'stats': EmployeeService().get_card_statistics(),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmployeeService' object has no attribute 'get_card_statistics'. Did you mean: 'get_statistics'?
+2026-10-11 20:50:59,246 INFO employees RESPONSE GET /employees/ | Status: 500 | Time: 0.408s
+2026-10-11 20:51:18,064 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-11 20:51:18,066 ERROR employees EXCEPTION GET /employees/ | Error: 'EmployeeRepository' object has no attribute 'get_card_statistics'
+Traceback (most recent call last):
+  File "C:\Users\ORATILWE.S\Documents\skillsbridge_ems\venv\Lib\site-packages\django\core\handlers\base.py", line 199, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ORATILWE.S\Documents\skillsbridge_ems\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\ORATILWE.S\Documents\skillsbridge_ems\employees\views.py", line 50, in index
+    'stats': EmployeeService().get_card_statistics(),
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\ORATILWE.S\Documents\skillsbridge_ems\employees\services\employee_service.py", line 78, in get_card_statistics
+    return self.repository.get_card_statistics()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmployeeRepository' object has no attribute 'get_card_statistics'. Did you mean: 'get_statistics'?
+2026-10-11 20:51:18,152 INFO employees RESPONSE GET /employees/ | Status: 500 | Time: 0.131s
+2026-10-11 20:51:19,705 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-11 20:51:19,705 ERROR employees EXCEPTION GET /employees/ | Error: 'EmployeeRepository' object has no attribute 'get_card_statistics'
+Traceback (most recent call last):
+  File "C:\Users\ORATILWE.S\Documents\skillsbridge_ems\venv\Lib\site-packages\django\core\handlers\base.py", line 199, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ORATILWE.S\Documents\skillsbridge_ems\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\ORATILWE.S\Documents\skillsbridge_ems\employees\views.py", line 50, in index
+    'stats': EmployeeService().get_card_statistics(),
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\ORATILWE.S\Documents\skillsbridge_ems\employees\services\employee_service.py", line 78, in get_card_statistics
+    return self.repository.get_card_statistics()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmployeeRepository' object has no attribute 'get_card_statistics'. Did you mean: 'get_statistics'?
+2026-10-11 20:51:19,772 INFO employees RESPONSE GET /employees/ | Status: 500 | Time: 0.091s
+2026-10-11 20:52:49,384 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-11 20:52:49,455 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.092s
+2026-10-11 20:54:02,802 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-11 20:54:02,819 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.058s
+2026-10-11 20:54:05,513 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-11 20:54:05,537 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.052s
+2026-10-11 20:54:24,541 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-11 20:54:24,568 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.054s
+2026-10-11 20:59:42,453 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-11 20:59:42,478 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.124s
+2026-10-11 21:00:30,743 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-11 21:00:30,791 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.089s
+2026-10-11 21:01:19,588 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-11 21:01:19,612 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.090s
+2026-10-11 21:24:04,048 INFO employees REQUEST GET /.well-known/appspecific/com.chrome.devtools.json | User: oratilwe.s
+2026-10-11 21:24:04,121 INFO employees RESPONSE GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.175s
+2026-10-11 21:52:08,416 INFO employees REQUEST GET / | User: oratilwe.s
+2026-10-11 21:52:08,720 INFO employees RESPONSE GET / | Status: 200 | Time: 0.347s
+2026-10-11 21:52:09,264 INFO employees REQUEST GET /favicon.ico | User: oratilwe.s
+2026-10-11 21:52:09,312 INFO employees RESPONSE GET /favicon.ico | Status: 404 | Time: 0.088s
+2026-10-11 21:52:22,920 INFO employees REQUEST GET /.well-known/appspecific/com.chrome.devtools.json | User: oratilwe.s
+2026-10-11 21:52:22,926 INFO employees RESPONSE GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.030s
+2026-10-11 21:59:57,100 INFO employees REQUEST GET / | User: oratilwe.s
+2026-10-11 21:59:57,131 INFO employees RESPONSE GET / | Status: 200 | Time: 0.130s
+2026-10-12 08:15:01,724 INFO employees REQUEST GET / | User: oratilwe.s
+2026-10-12 08:15:01,821 INFO employees RESPONSE GET / | Status: 200 | Time: 0.537s
+2026-10-12 08:18:15,885 INFO employees REQUEST GET / | User: oratilwe.s
+2026-10-12 08:18:16,164 INFO employees RESPONSE GET / | Status: 200 | Time: 0.329s
+2026-10-12 08:18:27,951 INFO employees REQUEST GET /.well-known/appspecific/com.chrome.devtools.json | User: oratilwe.s
+2026-10-12 08:18:28,003 INFO employees RESPONSE GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.068s
+2026-10-12 08:19:26,925 INFO employees REQUEST GET / | User: oratilwe.s
+2026-10-12 08:19:26,957 INFO employees RESPONSE GET / | Status: 200 | Time: 0.070s
+2026-10-12 08:19:27,154 INFO employees REQUEST GET /.well-known/appspecific/com.chrome.devtools.json | User: oratilwe.s
+2026-10-12 08:19:27,161 INFO employees RESPONSE GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.070s
+2026-10-12 09:34:48,896 INFO employees REQUEST POST /delete/7/ | User: oratilwe.s
+2026-10-12 09:34:48,909 INFO employees.decorators.audit_log START delete by oratilwe.s
+2026-10-12 09:34:48,957 INFO employees.decorators.audit_log END delete status=302 47.1ms
+2026-10-12 09:34:48,958 INFO employees RESPONSE POST /delete/7/ | Status: 302 | Time: 0.467s
+2026-10-12 09:34:48,986 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-12 09:34:49,044 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.071s
+2026-10-12 09:40:17,301 INFO employees REQUEST GET /add/ | User: oratilwe.s
+2026-10-12 09:40:17,304 INFO employees.decorators.audit_log START add by oratilwe.s
+2026-10-12 09:40:17,811 INFO employees.decorators.audit_log END add status=200 506.73ms
+2026-10-12 09:40:17,811 INFO employees RESPONSE GET /add/ | Status: 200 | Time: 0.664s
+2026-10-12 09:41:10,496 INFO employees REQUEST POST /add/ | User: oratilwe.s
+2026-10-12 09:41:10,503 INFO employees.decorators.audit_log START add by oratilwe.s
+2026-10-12 09:41:10,832 INFO employees.decorators.audit_log END add status=200 328.74ms
+2026-10-12 09:41:10,832 INFO employees RESPONSE POST /add/ | Status: 200 | Time: 0.366s
+2026-10-12 09:41:14,146 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-12 09:41:14,185 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.060s
+2026-10-12 10:28:55,468 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-12 10:28:55,560 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.489s
+2026-10-12 10:28:58,713 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-12 10:28:58,731 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.063s
+2026-10-12 10:29:00,632 INFO employees REQUEST GET /add/ | User: oratilwe.s
+2026-10-12 10:29:00,633 INFO employees.decorators.audit_log START add by oratilwe.s
+2026-10-12 10:29:00,668 INFO employees.decorators.audit_log END add status=200 34.46ms
+2026-10-12 10:29:00,669 INFO employees RESPONSE GET /add/ | Status: 200 | Time: 0.089s
+2026-10-12 10:29:48,609 INFO employees REQUEST POST /add/ | User: oratilwe.s
+2026-10-12 10:29:48,612 INFO employees.decorators.audit_log START add by oratilwe.s
+2026-10-12 10:29:48,772 INFO employees.decorators.audit_log END add status=200 159.48ms
+2026-10-12 10:29:48,773 INFO employees RESPONSE POST /add/ | Status: 200 | Time: 0.206s
+2026-10-12 10:29:52,075 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-12 10:29:52,096 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.062s
+2026-10-12 10:30:05,240 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-12 10:30:05,334 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.143s
+2026-10-12 11:11:40,233 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-12 11:13:01,047 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-12 11:13:01,298 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.311s
+2026-10-12 11:13:07,048 INFO employees REQUEST POST /delete/8/ | User: oratilwe.s
+2026-10-12 11:13:07,049 INFO employees.decorators.audit_log START delete by oratilwe.s
+2026-10-12 11:13:07,094 INFO employees.decorators.audit_log END delete status=302 44.45ms
+2026-10-12 11:13:07,096 INFO employees RESPONSE POST /delete/8/ | Status: 302 | Time: 0.069s
+2026-10-12 11:13:07,174 INFO employees REQUEST GET /deleted/ | User: oratilwe.s
+2026-10-12 11:13:07,175 INFO employees.decorators.audit_log START delete_success by oratilwe.s
+2026-10-12 11:13:07,180 INFO employees.decorators.audit_log END delete_success status=200 5.03ms
+2026-10-12 11:13:07,181 INFO employees RESPONSE GET /deleted/ | Status: 200 | Time: 0.023s
+2026-10-12 11:13:50,505 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-12 11:13:50,524 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.036s
+2026-10-12 11:14:00,962 INFO employees REQUEST POST /delete/9/ | User: oratilwe.s
+2026-10-12 11:14:00,963 INFO employees.decorators.audit_log START delete by oratilwe.s
+2026-10-12 11:14:00,978 INFO employees.decorators.audit_log END delete status=302 14.15ms
+2026-10-12 11:14:00,978 INFO employees RESPONSE POST /delete/9/ | Status: 302 | Time: 0.034s
+2026-10-12 11:14:01,030 INFO employees REQUEST GET /deleted/ | User: oratilwe.s
+2026-10-12 11:14:01,031 INFO employees.decorators.audit_log START delete_success by oratilwe.s
+2026-10-12 11:14:01,035 INFO employees.decorators.audit_log END delete_success status=200 2.84ms
+2026-10-12 11:14:01,036 INFO employees RESPONSE GET /deleted/ | Status: 200 | Time: 0.037s
+2026-10-13 08:08:03,980 INFO employees REQUEST GET / | User: oratilwe.s
+2026-10-13 08:08:04,419 INFO employees RESPONSE GET / | Status: 200 | Time: 0.584s
+2026-10-13 08:08:14,087 INFO employees REQUEST GET /.well-known/appspecific/com.chrome.devtools.json | User: oratilwe.s
+2026-10-13 08:08:14,128 INFO employees RESPONSE GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.098s
+2026-10-13 08:16:28,600 INFO employees REQUEST GET /add/ | User: oratilwe.s
+2026-10-13 08:16:28,623 INFO employees.decorators.audit_log START add by oratilwe.s
+2026-10-13 08:16:29,260 INFO employees.decorators.audit_log END add status=200 635.32ms
+2026-10-13 08:16:29,263 INFO employees RESPONSE GET /add/ | Status: 200 | Time: 1.106s
+2026-10-13 08:17:50,085 INFO employees REQUEST POST /add/ | User: oratilwe.s
+2026-10-13 08:17:50,101 INFO employees.decorators.audit_log START add by oratilwe.s
+2026-10-13 08:17:50,739 INFO employees.decorators.audit_log END add status=200 636.19ms
+2026-10-13 08:17:50,740 INFO employees RESPONSE POST /add/ | Status: 200 | Time: 0.806s
+2026-10-13 08:18:22,056 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-13 08:18:22,398 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.378s
+2026-10-13 08:18:32,632 INFO employees REQUEST GET / | User: oratilwe.s
+2026-10-13 08:18:32,666 INFO employees RESPONSE GET / | Status: 200 | Time: 0.096s
+2026-10-13 08:18:38,234 INFO employees REQUEST POST /delete/10/ | User: oratilwe.s
+2026-10-13 08:18:38,236 INFO employees.decorators.audit_log START delete by oratilwe.s
+2026-10-13 08:18:38,326 INFO employees.decorators.audit_log END delete status=302 89.78ms
+2026-10-13 08:18:38,327 INFO employees RESPONSE POST /delete/10/ | Status: 302 | Time: 0.137s
+2026-10-13 08:18:38,426 INFO employees REQUEST GET /deleted/ | User: oratilwe.s
+2026-10-13 08:18:38,427 INFO employees.decorators.audit_log START delete_success by oratilwe.s
+2026-10-13 08:18:38,481 INFO employees.decorators.audit_log END delete_success status=200 51.99ms
+2026-10-13 08:18:38,481 INFO employees RESPONSE GET /deleted/ | Status: 200 | Time: 0.075s
+2026-10-13 10:35:19,157 INFO employees REQUEST GET / | User: oratilwe.s
+2026-10-13 10:35:19,268 INFO employees RESPONSE GET / | Status: 200 | Time: 0.202s
+2026-10-13 10:35:24,226 INFO employees REQUEST GET /add/ | User: oratilwe.s
+2026-10-13 10:35:24,227 INFO employees.decorators.audit_log START add by oratilwe.s
+2026-10-13 10:35:24,440 INFO employees.decorators.audit_log END add status=200 212.54ms
+2026-10-13 10:35:24,440 INFO employees RESPONSE GET /add/ | Status: 200 | Time: 0.241s
+2026-10-13 10:35:47,763 INFO employees REQUEST POST /add/ | User: oratilwe.s
+2026-10-13 10:35:47,765 INFO employees.decorators.audit_log START add by oratilwe.s
+2026-10-13 10:35:48,035 INFO employees.decorators.audit_log END add status=200 269.22ms
+2026-10-13 10:35:48,036 INFO employees RESPONSE POST /add/ | Status: 200 | Time: 0.314s
+2026-10-13 10:35:49,746 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-13 10:35:49,796 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.076s
+2026-10-13 10:35:57,229 INFO employees REQUEST GET / | User: oratilwe.s
+2026-10-13 10:35:57,247 INFO employees RESPONSE GET / | Status: 200 | Time: 0.038s
+2026-10-13 10:36:35,315 INFO employees REQUEST POST /delete/11/ | User: oratilwe.s
+2026-10-13 10:36:35,316 INFO employees.decorators.audit_log START delete by oratilwe.s
+2026-10-13 10:36:35,344 INFO employees.decorators.audit_log END delete status=302 27.69ms
+2026-10-13 10:36:35,344 INFO employees RESPONSE POST /delete/11/ | Status: 302 | Time: 0.111s
+2026-10-13 10:36:35,387 INFO employees REQUEST GET /deleted/ | User: oratilwe.s
+2026-10-13 10:36:35,387 INFO employees.decorators.audit_log START delete_success by oratilwe.s
+2026-10-13 10:36:35,439 INFO employees.decorators.audit_log END delete_success status=200 51.35ms
+2026-10-13 10:36:35,440 INFO employees RESPONSE GET /deleted/ | Status: 200 | Time: 0.060s
+2026-10-13 10:36:38,540 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-13 10:36:38,563 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.068s
+2026-10-13 10:36:57,953 INFO employees REQUEST GET /.well-known/appspecific/com.chrome.devtools.json | User: oratilwe.s
+2026-10-13 10:36:58,181 INFO employees RESPONSE GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.253s
+2026-10-13 10:37:11,025 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-13 10:37:11,051 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.069s
+2026-10-13 10:37:12,292 INFO employees REQUEST GET /favicon.ico | User: oratilwe.s
+2026-10-13 10:37:12,298 INFO employees RESPONSE GET /favicon.ico | Status: 404 | Time: 0.060s
+2026-10-13 10:37:22,135 INFO employees REQUEST GET /.well-known/appspecific/com.chrome.devtools.json | User: oratilwe.s
+2026-10-13 10:37:22,141 INFO employees RESPONSE GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.029s
+2026-10-13 10:37:35,361 INFO employees REQUEST GET /favicon.ico | User: oratilwe.s
+2026-10-13 10:37:35,366 INFO employees RESPONSE GET /favicon.ico | Status: 404 | Time: 0.134s
+2026-10-13 10:40:13,266 INFO employees REQUEST GET /favicon.ico | User: oratilwe.s
+2026-10-13 10:40:13,274 INFO employees RESPONSE GET /favicon.ico | Status: 404 | Time: 0.087s
+2026-10-13 13:28:01,202 INFO employees REQUEST GET / | User: oratilwe.s
+2026-10-13 13:28:01,643 INFO employees RESPONSE GET / | Status: 200 | Time: 0.547s
+2026-10-13 13:28:04,013 INFO employees REQUEST GET / | User: oratilwe.s
+2026-10-13 13:28:04,033 INFO employees RESPONSE GET / | Status: 200 | Time: 0.069s
+2026-10-13 13:28:05,222 INFO employees REQUEST GET /add/ | User: oratilwe.s
+2026-10-13 13:28:05,224 INFO employees.decorators.audit_log START add by oratilwe.s
+2026-10-13 13:28:05,490 INFO employees.decorators.audit_log END add status=200 265.7ms
+2026-10-13 13:28:05,491 INFO employees RESPONSE GET /add/ | Status: 200 | Time: 0.303s
+2026-10-13 13:28:24,094 INFO employees REQUEST POST /add/ | User: oratilwe.s
+2026-10-13 13:28:24,096 INFO employees.decorators.audit_log START add by oratilwe.s
+2026-10-13 13:28:24,384 INFO employees.decorators.audit_log END add status=200 287.25ms
+2026-10-13 13:28:24,385 INFO employees RESPONSE POST /add/ | Status: 200 | Time: 0.316s
+2026-10-13 13:28:27,029 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-13 13:28:27,093 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.081s
+2026-10-13 13:28:42,188 INFO employees REQUEST GET / | User: oratilwe.s
+2026-10-13 13:28:42,209 INFO employees RESPONSE GET / | Status: 200 | Time: 0.049s
+2026-10-13 13:30:10,107 INFO employees REQUEST GET /.well-known/appspecific/com.chrome.devtools.json | User: oratilwe.s
+2026-10-13 13:30:10,124 INFO employees RESPONSE GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.426s
+2026-10-13 13:30:14,240 INFO employees REQUEST GET / | User: oratilwe.s
+2026-10-13 13:30:14,619 INFO employees RESPONSE GET / | Status: 200 | Time: 0.441s
+2026-10-13 13:30:14,784 INFO employees REQUEST GET /.well-known/appspecific/com.chrome.devtools.json | User: oratilwe.s
+2026-10-13 13:30:14,792 INFO employees RESPONSE GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.044s
+2026-10-13 13:30:16,115 INFO employees REQUEST GET /favicon.ico | User: oratilwe.s
+2026-10-13 13:30:16,131 INFO employees RESPONSE GET /favicon.ico | Status: 404 | Time: 0.072s
+2026-10-13 13:30:54,263 INFO employees REQUEST GET / | User: oratilwe.s
+2026-10-13 13:30:54,279 INFO employees RESPONSE GET / | Status: 200 | Time: 0.080s
+2026-10-13 13:30:54,352 INFO employees REQUEST GET /.well-known/appspecific/com.chrome.devtools.json | User: oratilwe.s
+2026-10-13 13:30:54,360 INFO employees RESPONSE GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.022s
+2026-10-13 13:35:55,371 INFO employees REQUEST GET / | User: oratilwe.s
+2026-10-13 13:35:55,490 INFO employees RESPONSE GET / | Status: 200 | Time: 0.378s
+2026-10-13 13:35:55,862 INFO employees REQUEST GET /.well-known/appspecific/com.chrome.devtools.json | User: oratilwe.s
+2026-10-13 13:35:55,900 INFO employees RESPONSE GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.082s
+2026-10-13 13:35:56,767 INFO employees REQUEST GET /favicon.ico | User: oratilwe.s
+2026-10-13 13:35:56,776 INFO employees RESPONSE GET /favicon.ico | Status: 404 | Time: 0.019s
+2026-10-13 13:36:03,055 INFO employees REQUEST GET / | User: oratilwe.s
+2026-10-13 13:36:03,080 INFO employees RESPONSE GET / | Status: 200 | Time: 0.071s
+2026-10-13 13:36:03,823 INFO employees REQUEST GET /favicon.ico | User: oratilwe.s
+2026-10-13 13:36:03,834 INFO employees RESPONSE GET /favicon.ico | Status: 404 | Time: 0.077s
+2026-10-13 13:36:14,828 INFO employees REQUEST POST /delete/12/ | User: oratilwe.s
+2026-10-13 13:36:14,837 INFO employees.decorators.audit_log START delete by oratilwe.s
+2026-10-13 13:36:14,908 INFO employees.decorators.audit_log END delete status=302 71.1ms
+2026-10-13 13:36:14,915 INFO employees RESPONSE POST /delete/12/ | Status: 302 | Time: 0.131s
+2026-10-13 13:36:15,030 INFO employees REQUEST GET /deleted/ | User: oratilwe.s
+2026-10-13 13:36:15,032 INFO employees.decorators.audit_log START delete_success by oratilwe.s
+2026-10-13 13:36:15,129 INFO employees.decorators.audit_log END delete_success status=200 95.97ms
+2026-10-13 13:36:15,131 INFO employees RESPONSE GET /deleted/ | Status: 200 | Time: 0.129s
+2026-10-13 13:54:33,244 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-13 13:54:33,328 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.339s
+2026-10-13 13:54:37,317 INFO employees REQUEST GET / | User: oratilwe.s
+2026-10-13 13:54:37,337 INFO employees RESPONSE GET / | Status: 200 | Time: 0.070s
+2026-10-13 13:55:15,728 INFO employees REQUEST GET /.well-known/appspecific/com.chrome.devtools.json | User: oratilwe.s
+2026-10-13 13:55:16,228 INFO employees RESPONSE GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.527s
+2026-10-13 14:59:55,356 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-13 14:59:55,423 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.356s
+2026-10-13 14:59:55,859 INFO employees REQUEST GET /.well-known/appspecific/com.chrome.devtools.json | User: oratilwe.s
+2026-10-13 14:59:56,176 INFO employees RESPONSE GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.390s
+2026-10-13 15:01:55,448 INFO employees REQUEST POST /logout/ | User: oratilwe.s
+2026-10-13 15:01:55,594 INFO employees RESPONSE POST /logout/ | Status: 302 | Time: 0.311s
+2026-10-13 15:01:55,649 INFO employees REQUEST GET / | User: Anonymous
+2026-10-13 15:01:55,666 INFO employees RESPONSE GET / | Status: 302 | Time: 0.017s
+2026-10-13 15:01:55,703 INFO employees REQUEST GET /login/ | User: Anonymous
+2026-10-13 15:01:55,875 INFO employees RESPONSE GET /login/ | Status: 200 | Time: 0.173s
+2026-10-13 15:02:01,266 INFO employees REQUEST GET / | User: Anonymous
+2026-10-13 15:02:01,271 INFO employees RESPONSE GET / | Status: 302 | Time: 0.005s
+2026-10-13 15:02:01,291 INFO employees REQUEST GET /login/ | User: Anonymous
+2026-10-13 15:02:01,321 INFO employees RESPONSE GET /login/ | Status: 200 | Time: 0.029s
+2026-10-13 15:02:02,580 INFO employees REQUEST GET / | User: Anonymous
+2026-10-13 15:02:02,586 INFO employees RESPONSE GET / | Status: 302 | Time: 0.006s
+2026-10-13 15:02:02,624 INFO employees REQUEST GET /login/ | User: Anonymous
+2026-10-13 15:02:02,639 INFO employees RESPONSE GET /login/ | Status: 200 | Time: 0.015s
+2026-10-13 15:02:25,378 INFO employees REQUEST GET /add/ | User: Anonymous
+2026-10-13 15:02:25,381 INFO employees RESPONSE GET /add/ | Status: 302 | Time: 0.004s
+2026-10-13 15:02:25,406 INFO employees REQUEST GET /login/ | User: Anonymous
+2026-10-13 15:02:25,417 INFO employees RESPONSE GET /login/ | Status: 200 | Time: 0.011s
+2026-10-13 15:03:20,937 INFO employees REQUEST POST /login/ | User: Anonymous
+2026-10-13 15:03:22,984 INFO employees RESPONSE POST /login/ | Status: 302 | Time: 2.048s
+2026-10-13 15:03:23,296 INFO employees REQUEST GET /add/ | User: oratilwe.s
+2026-10-13 15:03:23,308 INFO employees.decorators.audit_log START add by oratilwe.s
+2026-10-13 15:03:23,524 INFO employees.decorators.audit_log END add status=200 214.29ms
+2026-10-13 15:03:23,527 INFO employees RESPONSE GET /add/ | Status: 200 | Time: 0.471s
+2026-10-13 15:03:26,264 INFO employees REQUEST GET / | User: oratilwe.s
+2026-10-13 15:03:26,393 INFO employees RESPONSE GET / | Status: 200 | Time: 0.177s
+2026-10-13 20:40:59,052 INFO employees REQUEST GET /api/v1/employees/ | User: oratilwe.s
+2026-10-13 20:40:59,095 INFO employees RESPONSE GET /api/v1/employees/ | Status: 200 | Time: 0.161s
+2026-10-13 20:41:12,383 INFO employees REQUEST GET /add/ | User: oratilwe.s
+2026-10-13 20:41:12,387 INFO employees.decorators.audit_log START add by oratilwe.s
+2026-10-13 20:41:13,667 INFO employees.decorators.audit_log END add status=200 1279.23ms
+2026-10-13 20:41:13,671 INFO employees RESPONSE GET /add/ | Status: 200 | Time: 1.352s
+2026-10-13 20:41:57,735 INFO employees REQUEST POST /add/ | User: oratilwe.s
+2026-10-13 20:41:57,740 INFO employees.decorators.audit_log START add by oratilwe.s
+2026-10-13 20:41:58,182 INFO employees.decorators.audit_log END add status=200 440.96ms
+2026-10-13 20:41:58,186 INFO employees RESPONSE POST /add/ | Status: 200 | Time: 0.484s
+2026-10-13 20:42:01,842 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-13 20:42:02,008 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.200s
+2026-10-13 20:42:06,370 INFO employees REQUEST GET /add/ | User: oratilwe.s
+2026-10-13 20:42:06,374 INFO employees.decorators.audit_log START add by oratilwe.s
+2026-10-13 20:42:06,405 INFO employees.decorators.audit_log END add status=200 30.04ms
+2026-10-13 20:42:06,407 INFO employees RESPONSE GET /add/ | Status: 200 | Time: 0.068s
+2026-10-13 20:42:59,336 INFO employees REQUEST POST /add/ | User: oratilwe.s
+2026-10-13 20:42:59,341 INFO employees.decorators.audit_log START add by oratilwe.s
+2026-10-13 20:42:59,392 INFO employees.decorators.audit_log END add status=200 50.33ms
+2026-10-13 20:42:59,394 INFO employees RESPONSE POST /add/ | Status: 200 | Time: 0.090s
+2026-10-13 20:43:09,697 INFO employees REQUEST GET / | User: oratilwe.s
+2026-10-13 20:43:09,732 INFO employees RESPONSE GET / | Status: 200 | Time: 0.049s
+2026-10-13 20:43:18,841 INFO employees REQUEST GET /add/ | User: oratilwe.s
+2026-10-13 20:43:18,845 INFO employees.decorators.audit_log START add by oratilwe.s
+2026-10-13 20:43:18,882 INFO employees.decorators.audit_log END add status=200 34.73ms
+2026-10-13 20:43:18,885 INFO employees RESPONSE GET /add/ | Status: 200 | Time: 0.059s
+2026-10-13 20:43:25,057 INFO employees REQUEST GET / | User: oratilwe.s
+2026-10-13 20:43:25,085 INFO employees RESPONSE GET / | Status: 200 | Time: 0.073s
+2026-10-13 20:43:31,451 INFO employees REQUEST GET /edit/13 | User: oratilwe.s
+2026-10-13 20:43:31,456 INFO employees.decorators.audit_log START edit by oratilwe.s
+2026-10-13 20:43:31,535 INFO employees.decorators.audit_log END edit status=200 77.8ms
+2026-10-13 20:43:31,537 INFO employees RESPONSE GET /edit/13 | Status: 200 | Time: 0.105s
+2026-10-13 20:43:35,054 INFO employees REQUEST GET / | User: oratilwe.s
+2026-10-13 20:43:35,111 INFO employees RESPONSE GET / | Status: 200 | Time: 0.106s
+2026-10-13 20:43:36,994 INFO employees REQUEST GET /add/ | User: oratilwe.s
+2026-10-13 20:43:36,999 INFO employees.decorators.audit_log START add by oratilwe.s
+2026-10-13 20:43:37,031 INFO employees.decorators.audit_log END add status=200 31.91ms
+2026-10-13 20:43:37,035 INFO employees RESPONSE GET /add/ | Status: 200 | Time: 0.120s
+2026-10-13 20:44:52,685 INFO employees REQUEST POST /add/ | User: oratilwe.s
+2026-10-13 20:44:52,689 INFO employees.decorators.audit_log START add by oratilwe.s
+2026-10-13 20:44:52,772 INFO employees.decorators.audit_log END add status=200 82.49ms
+2026-10-13 20:44:52,776 INFO employees RESPONSE POST /add/ | Status: 200 | Time: 0.168s
+2026-10-13 20:44:54,848 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-13 20:44:54,911 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.088s
+2026-10-13 20:44:58,658 INFO employees REQUEST GET /add/ | User: oratilwe.s
+2026-10-13 20:44:58,662 INFO employees.decorators.audit_log START add by oratilwe.s
+2026-10-13 20:44:58,708 INFO employees.decorators.audit_log END add status=200 45.61ms
+2026-10-13 20:44:58,711 INFO employees RESPONSE GET /add/ | Status: 200 | Time: 0.070s
+2026-10-13 20:46:13,473 INFO employees REQUEST POST /add/ | User: oratilwe.s
+2026-10-13 20:46:13,478 INFO employees.decorators.audit_log START add by oratilwe.s
+2026-10-13 20:46:13,550 INFO employees.decorators.audit_log END add status=200 71.77ms
+2026-10-13 20:46:13,554 INFO employees RESPONSE POST /add/ | Status: 200 | Time: 0.137s
+2026-10-13 20:46:15,229 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-13 20:46:15,316 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.115s
+2026-10-13 20:46:21,092 INFO employees REQUEST GET /api/v1/employees/ | User: oratilwe.s
+2026-10-13 20:46:21,121 INFO employees RESPONSE GET /api/v1/employees/ | Status: 200 | Time: 0.073s
+2026-10-13 20:47:57,064 INFO employees REQUEST GET /.well-known/appspecific/com.chrome.devtools.json | User: oratilwe.s
+2026-10-13 20:47:57,562 INFO employees RESPONSE GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.581s
+2026-10-13 20:48:45,957 INFO employees REQUEST GET /add/ | User: oratilwe.s
+2026-10-13 20:48:45,965 INFO employees.decorators.audit_log START add by oratilwe.s
+2026-10-13 20:48:46,043 INFO employees.decorators.audit_log END add status=200 76.69ms
+2026-10-13 20:48:46,048 INFO employees RESPONSE GET /add/ | Status: 200 | Time: 0.196s
+2026-10-13 20:48:56,151 INFO employees REQUEST GET /api/v1/employees/1 | User: oratilwe.s
+2026-10-13 20:48:56,173 INFO employees RESPONSE GET /api/v1/employees/1 | Status: 404 | Time: 0.113s
+2026-10-13 20:48:56,235 INFO employees REQUEST GET /api/v1/employees/1/ | User: oratilwe.s
+2026-10-13 20:48:56,276 INFO employees RESPONSE GET /api/v1/employees/1/ | Status: 404 | Time: 0.060s
+2026-10-13 20:49:17,725 INFO employees REQUEST GET /edit/15 | User: oratilwe.s
+2026-10-13 20:49:17,729 INFO employees.decorators.audit_log START edit by oratilwe.s
+2026-10-13 20:49:17,785 INFO employees.decorators.audit_log END edit status=200 55.04ms
+2026-10-13 20:49:17,788 INFO employees RESPONSE GET /edit/15 | Status: 200 | Time: 0.133s
+2026-10-13 20:49:22,983 INFO employees REQUEST POST /edit/15 | User: oratilwe.s
+2026-10-13 20:49:22,991 INFO employees.decorators.audit_log START edit by oratilwe.s
+2026-10-13 20:49:23,195 INFO employees.decorators.audit_log END edit status=200 203.06ms
+2026-10-13 20:49:23,199 INFO employees RESPONSE POST /edit/15 | Status: 200 | Time: 0.264s
+2026-10-13 20:49:24,886 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-13 20:49:25,107 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.263s
+2026-10-13 20:49:45,304 INFO employees REQUEST GET /api/v1/employees/0001 | User: oratilwe.s
+2026-10-13 20:49:45,329 INFO employees RESPONSE GET /api/v1/employees/0001 | Status: 404 | Time: 0.057s
+2026-10-13 20:49:45,376 INFO employees REQUEST GET /api/v1/employees/0001/ | User: oratilwe.s
+2026-10-13 20:49:45,390 INFO employees RESPONSE GET /api/v1/employees/0001/ | Status: 404 | Time: 0.029s
+2026-10-13 20:49:53,855 INFO employees REQUEST GET /api/v1/employees/1/ | User: oratilwe.s
+2026-10-13 20:49:53,870 INFO employees RESPONSE GET /api/v1/employees/1/ | Status: 404 | Time: 0.050s
+2026-10-13 20:50:18,693 INFO employees REQUEST GET /edit/15 | User: oratilwe.s
+2026-10-13 20:50:18,697 INFO employees.decorators.audit_log START edit by oratilwe.s
+2026-10-13 20:50:18,740 INFO employees.decorators.audit_log END edit status=200 42.33ms
+2026-10-13 20:50:18,742 INFO employees RESPONSE GET /edit/15 | Status: 200 | Time: 0.077s
+2026-10-13 20:50:36,301 INFO employees REQUEST GET /api/v1/employees/0001/ | User: oratilwe.s
+2026-10-13 20:50:36,320 INFO employees RESPONSE GET /api/v1/employees/0001/ | Status: 404 | Time: 0.054s
+2026-10-13 20:54:33,524 INFO employees REQUEST GET /api/v1/employees | User: oratilwe.s
+2026-10-13 20:54:33,726 INFO employees RESPONSE GET /api/v1/employees | Status: 404 | Time: 0.286s
+2026-10-13 20:54:33,783 INFO employees REQUEST GET /api/v1/employees/ | User: oratilwe.s
+2026-10-13 20:54:33,811 INFO employees RESPONSE GET /api/v1/employees/ | Status: 200 | Time: 0.046s
+2026-10-13 20:55:11,013 INFO employees REQUEST GET /api/v1/employees/15 | User: oratilwe.s
+2026-10-13 20:55:11,032 INFO employees RESPONSE GET /api/v1/employees/15 | Status: 404 | Time: 0.053s
+2026-10-13 20:55:11,084 INFO employees REQUEST GET /api/v1/employees/15/ | User: oratilwe.s
+2026-10-13 20:55:11,099 INFO employees RESPONSE GET /api/v1/employees/15/ | Status: 200 | Time: 0.032s
+2026-10-13 20:56:24,163 INFO employees REQUEST GET /api/v1/employees/ | User: oratilwe.s
+2026-10-13 20:56:24,292 INFO employees RESPONSE GET /api/v1/employees/ | Status: 200 | Time: 0.199s
+2026-10-13 21:12:19,339 INFO employees REQUEST GET /clear-cache/ | User: oratilwe.s
+2026-10-13 21:12:19,343 INFO employees RESPONSE GET /clear-cache/ | Status: 200 | Time: 0.094s
+2026-10-14 11:13:32,981 INFO employees REQUEST GET / | User: oratilwe.s
+2026-10-14 11:13:33,254 INFO employees RESPONSE GET / | Status: 200 | Time: 0.388s
+2026-10-14 11:13:45,580 INFO employees REQUEST GET /employee/15/ | User: oratilwe.s
+2026-10-14 11:13:45,634 INFO employees RESPONSE GET /employee/15/ | Status: 200 | Time: 0.112s
+2026-10-14 11:13:50,895 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-14 11:13:50,920 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.060s
+2026-10-14 11:14:29,629 INFO employees REQUEST GET /employee/15/ | User: oratilwe.s
+2026-10-14 11:14:29,638 INFO employees RESPONSE GET /employee/15/ | Status: 200 | Time: 0.037s
+2026-10-14 11:14:36,898 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-14 11:14:36,910 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.040s
+2026-10-14 11:15:25,982 INFO employees REQUEST GET /employee/15/ | User: oratilwe.s
+2026-10-14 11:15:25,999 INFO employees RESPONSE GET /employee/15/ | Status: 200 | Time: 0.052s
+2026-10-14 11:16:40,864 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-14 11:16:40,978 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.315s
+2026-10-14 11:16:42,811 INFO employees REQUEST GET /employee/14/ | User: oratilwe.s
+2026-10-14 11:16:42,849 INFO employees RESPONSE GET /employee/14/ | Status: 200 | Time: 0.063s
+2026-10-14 11:35:16,116 INFO employees REQUEST GET / | User: oratilwe.s
+2026-10-14 11:35:16,384 INFO employees RESPONSE GET / | Status: 200 | Time: 0.389s
+2026-10-14 11:35:17,048 INFO employees REQUEST GET /favicon.ico | User: oratilwe.s
+2026-10-14 11:35:17,098 INFO employees RESPONSE GET /favicon.ico | Status: 404 | Time: 0.073s
+2026-10-14 11:35:19,153 INFO employees REQUEST GET /employee/15/ | User: oratilwe.s
+2026-10-14 11:35:19,420 INFO employees RESPONSE GET /employee/15/ | Status: 200 | Time: 0.299s
+2026-10-14 11:36:35,587 INFO employees REQUEST GET / | User: oratilwe.s
+2026-10-14 11:36:35,605 INFO employees RESPONSE GET / | Status: 200 | Time: 0.048s
+2026-10-14 11:36:49,478 INFO employees REQUEST GET / | User: oratilwe.s
+2026-10-14 11:36:49,499 INFO employees RESPONSE GET / | Status: 200 | Time: 0.047s
+2026-10-14 11:37:05,091 INFO employees REQUEST POST /delete/14/ | User: oratilwe.s
+2026-10-14 11:37:05,093 INFO employees.decorators.audit_log START delete by oratilwe.s
+2026-10-14 11:37:05,131 INFO employees.decorators.audit_log END delete status=302 36.96ms
+2026-10-14 11:37:05,135 INFO employees RESPONSE POST /delete/14/ | Status: 302 | Time: 0.068s
+2026-10-14 11:37:05,203 INFO employees REQUEST GET /deleted/ | User: oratilwe.s
+2026-10-14 11:37:05,206 INFO employees.decorators.audit_log START delete_success by oratilwe.s
+2026-10-14 11:37:05,249 INFO employees.decorators.audit_log END delete_success status=200 42.55ms
+2026-10-14 11:37:05,252 INFO employees RESPONSE GET /deleted/ | Status: 200 | Time: 0.063s
+2026-10-14 11:37:15,909 INFO employees REQUEST GET /employees/ | User: oratilwe.s
+2026-10-14 11:37:15,933 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.047s
+2026-10-14 11:37:54,054 INFO employees REQUEST POST /delete/15/ | User: oratilwe.s
+2026-10-14 11:37:54,057 INFO employees.decorators.audit_log START delete by oratilwe.s
+2026-10-14 11:37:54,070 INFO employees.decorators.audit_log END delete status=302 12.48ms
+2026-10-14 11:37:54,071 INFO employees RESPONSE POST /delete/15/ | Status: 302 | Time: 0.044s
+2026-10-14 11:37:54,123 INFO employees REQUEST GET /deleted/ | User: oratilwe.s
+2026-10-14 11:37:54,125 INFO employees.decorators.audit_log START delete_success by oratilwe.s
+2026-10-14 11:37:54,127 INFO employees.decorators.audit_log END delete_success status=200 1.83ms
+2026-10-14 11:37:54,130 INFO employees RESPONSE GET /deleted/ | Status: 200 | Time: 0.028s
+2026-10-14 11:48:16,507 INFO employees REQUEST GET /employees/ | User: Anonymous
+2026-10-14 11:48:16,509 INFO employees RESPONSE GET /employees/ | Status: 302 | Time: 0.002s
+2026-10-14 11:48:17,954 INFO employees REQUEST GET /employees/ | User: u
+2026-10-14 11:48:18,158 INFO employees RESPONSE GET /employees/ | Status: 200 | Time: 0.220s

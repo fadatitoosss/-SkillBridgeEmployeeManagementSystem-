@@ -1,0 +1,11 @@
+{% extends 'employees/base.html' %}
+{% block body %}
+<div class="container text-center mt-5">
+    <h2>Employee deleted</h2>
+    <p>
+        {% if name %}{{ name }} has been removed from the system.
+        {% else %}The employee has been removed from the system.{% endif %}
+    </p>
+    <a href="{% url 'index' %}" class="btn btn-primary">Back to employees</a>
+</div>
+{% endblock %}

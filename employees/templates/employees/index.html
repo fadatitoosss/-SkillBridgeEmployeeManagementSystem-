@@ -1,0 +1,207 @@
+{% extends "employees/base.html" %}
+{% load employee_tags %}
+{% block body %}
+<div class="d-flex justify-content-between align-items-center mt-3 mx-4">
+    <h2 class="mb-0">All Employees</h2>
+    <a class="btn btn-primary btn-sm" href="{% url 'add' %}">
+        <i class="fa-solid fa-plus fa-lg"></i> Add Employees
+    </a>
+</div>
+<div class="row g-3 mx-4 mb-3 stats-row">
+    <div class="col-6 col-md-3">
+        <div class="card stat-card text-center bg-light">
+            <div class="card-body">
+                <div class="stat-number">{{ stats.total }}</div>
+                <div class="stat-label">Total Employees</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-6 col-md-3">
+        <div class="card stat-card text-center bg-light">
+            <div class="card-body">
+                <div class="stat-number">{{ stats.active }}</div>
+                <div class="stat-label">Active</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-6 col-md-3">
+        <div class="card stat-card text-center bg-light">
+            <div class="card-body">
+                <div class="stat-number">{{ stats.inactive }}</div>
+                <div class="stat-label">Inactive</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-6 col-md-3">
+        <div class="card stat-card text-center bg-light">
+            <div class="card-body ">
+                <div class="stat-number">{{ stats.full_time }}</div>
+                <div class="stat-label">Full-Time</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                <div class="row">
+                    <div class="col-12">
+                        {% if employees %}
+                        <div class="d-flex flex-wrap justify-content-center align-items-center gap-2 mb-3">
+
+                            <form method="GET" action="{% url 'index' %}" class="d-flex flex-wrap justify-content-center gap-2">
+                                <input type="text" name="q" value="{{ q }}" class="form-control form-control-sm w-auto" placeholder="Search name, email, ID">
+
+                                <select name="department" class="form-select form-select-sm w-auto">
+                                    <option value="">All departments</option>
+                                    {% for code, label in department_choices %}
+                                    <option value="{{ code }}" {% if code == selected_department %}selected{% endif %}>{{ label }}</option>
+                                    {% endfor %}
+                                </select>
+
+                                <select name="employment_type" class="form-select form-select-sm w-auto">
+                                    <option value="">All types</option>
+                                    {% for code, label in employment_type_choices %}
+                                    <option value="{{ code }}" {% if code == selected_type %}selected{% endif %}>{{ label }}</option>
+                                    {% endfor %}
+                                </select>
+
+                                <select name="status" class="form-select form-select-sm w-auto">
+                                    <option value="">All statuses</option>
+                                    <option value="active" {% if selected_status == 'active' %}selected{% endif %}>Active</option>
+                                    <option value="inactive" {% if selected_status == 'inactive' %}selected{% endif %}>Inactive</option>
+                                </select>
+
+                                <button type="submit" class="btn btn-dark btn-sm">Search</button>
+                                <a href="{% url 'index' %}" class="btn btn-outline-secondary btn-sm">Clear</a>
+                            </form>
+                        </div>
+                        <div class="card bg-light ms-4 me-4 mb-4">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <span><i class="fa-solid fa-list fa-lg"></i> Employee Records</span>
+                                <!-- <a class="btn btn-primary btn-sm ms-auto" href="{% url 'add' %}">
+                                    <i class="fa-solid fa-plus fa-lg"></i> Add Employees
+                                </a> -->
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            
+                                            <thead>
+                                            <tr>
+                                                <th scope="col">First Name</th>
+                                                <th scope="col">Last Name</th>
+                                                <th scope="col">Email</th>
+                                                <th scope="col">Phone</th>
+                                                <th scope="col">Employee ID</th>
+                                                <th scope="col">Department</th>
+                                                <th scope="col">Job Title</th>
+                                                <th scope="col">Employment Type</th>
+                                                <th scope="col">Hire Date</th>
+                                                <th scope="col">Salary</th>
+                                                <th scope="col">Is Active</th>
+                                                <th scope="col">Actions</th>
+                                                
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                                {% for employee in employees %}
+                                                    <tr>
+                                                        
+                                                        <td><a href="{% url 'detail' employee.id %}"> {{ employee.first_name}} </a></td>
+                                                        <td> {{ employee.last_name}} </td>
+                                                        <td> {{ employee.email}} </td>
+                                                        <td> {{ employee.phone}} </td>
+                                                        <td> {{ employee.employee_id}} </td>
+                                                        <td> {{ employee.department}} </td>
+                                                        <td> {{ employee.job_title}} </td>
+                                                        <td> {{ employee.employment_type}} </td>
+                                                        <td> {{ employee.hire_date}} </td>
+                                                        <td> {{ employee.salary}} </td>
+                                                        <td> {% status_badge employee %}</td>
+                                                        <td>
+                                                        <button type="button" class="btn btn-success me-1" href="{% url 'view_employee' employee.id %}" data-bs-toggle="modal" data-bs-target="#myModal{{employee.id}}">
+                                                            <i class="fa-solid fa-circle-info"></i>
+                                                        </button>
+
+                                                        <!-- Modal View Employee -->
+                                                    <div class="modal" id="myModal{{employee.id}}" tabindex="-1" aria-labelledby="myModalLabel1" aria-hidden="true">
+                                                        <div class="modal-dialog" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title">
+                                                                    Employee: {{ employee.first_name}} {{ employee.last_name}}
+                                                                    </h5>
+                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true"></span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                <ul class="list-unstyled">
+                                                                    <li>Employee ID: <strong>{{ employee.employee_id }}</strong></li>
+                                                                    <li>First Name: <strong>{{ employee.first_name }}</strong></li>
+                                                                    <li>Last Name: <strong>{{ employee.last_name }}</strong></li>
+                                                                    <li>Email: <strong>{{ employee.email }}</strong></li>
+                                                                    <li>Department: <strong>{{ employee.department }}</strong></li>
+                                                                    <li>Job Title: <strong>{{ employee.job_title }}</strong></li>
+                                                                    <li>Salary: <strong>{{ employee.salary }}</strong></li>
+                                                                    <li>Phone: <strong>{{ employee.phone}}</strong></li>
+                                                                    <li>Employment Type: <strong>{{ employee.employment_type }}</strong></li>
+                                                                </ul>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a class="btn btn-warning me-1" href="{% url 'edit' employee.id %}">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </a>
+
+                                                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delete{{employee.id}}">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button> 
+                                                <!-- Modal - Delete Employee -->
+                                                <div class="modal" id="delete{{employee.id}}" tabindex="-1" aria-labelledby="myModalLabel2" aria-hidden="true">
+                                                        <div class="modal-dialog" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title">
+                                                                    Employee: {{ employee.first_name}} {{ employee.last_name}}
+                                                                    </h5>
+                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true"></span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <p>Are you sure you want to delete this employee?</p>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <form action="{% url 'delete' employee.id %}" method="POST">
+                                                                        {% csrf_token %}
+                                                                        <input type="submit" class="btn btn-primary" value="Delete">
+                                                                    </form>
+                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </td>
+                                                </tr>
+                                                {% endfor %}
+                                            </tbody>
+                                            </table>
+                                    </div>
+                                </p>
+                            </div>
+                        </div>
+                        {% else %}
+                            <div class="text-center text-muted py-4">
+                                <h5 class="alert alert-primary ms-4">No employees found</h5>
+                                <a href="{% url 'index' %}" class="btn btn-outline-secondary btn-sm">Clear filters</a>
+                            </div>
+                        {% endif %}
+                        
+                    </div>
+                </div>
+{% endblock %}

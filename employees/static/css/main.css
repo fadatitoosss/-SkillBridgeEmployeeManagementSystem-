@@ -1,0 +1,29 @@
+.card-header {
+  background: rgb(70.4058367533%, 75.7865937073%, 83.3196534428%);
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  td, th {
+    font-size: 0.8rem;
+  }
+}
+.stat-card {
+  border: 1px solid #1f2937 !important;
+  border-radius: 6px;
+  background: #fff;
+}
+.stat-card .stat-number {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+.stat-card .stat-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=main.css.map */

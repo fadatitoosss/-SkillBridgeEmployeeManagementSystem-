@@ -1,0 +1,25 @@
+{% extends "employees/base.html" %}
+{% block body %}
+<div class="row justify-content-center mt-5">
+    <div class="col-md-4">
+        <div class="card bg-light">
+            <div class="card-header">Log In</div>
+            <div class="card-body">
+                <form method="POST">
+                    {% csrf_token %}
+                    {% for field in form %}
+                    <div class="mb-3">
+                        {{ field.label_tag }}
+                        {{ field }}
+                    </div>
+                    {% endfor %}
+                    {% if form.errors %}
+                    <div class="text-danger small mb-2">Incorrect username or password.</div>
+                    {% endif %}
+                    <button type="submit" class="btn btn-primary">Log In</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

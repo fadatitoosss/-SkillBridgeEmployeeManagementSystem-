@@ -1,0 +1,27 @@
+{% extends 'employees/base.html' %}
+{% block body %}
+<div class="container mt-4">
+    <h2>{{ employee.first_name }} {{ employee.last_name }}</h2>
+    <ul class="list-unstyled">
+        <li><strong>Employee ID:</strong> {{ employee.employee_id }}</li>
+        <li><strong>Email:</strong> {{ employee.email }}</li>
+        <li><strong>Phone:</strong> {{ employee.phone }}</li>
+        <li><strong>Department:</strong> {{ employee.get_department_display }}</li>
+        <li><strong>Job title:</strong> {{ employee.job_title }}</li>
+        <li><strong>Type:</strong> {{ employee.get_employment_type_display }}</li>
+        <li><strong>Hire date:</strong> {{ employee.hire_date }}</li>
+    </ul>
+    <a href="{% url 'index' %}" class="btn btn-secondary">Back to list</a>
+
+    <div class="card mt-4">
+        <div class="card-header">Recently Viewed</div>
+        <ul class="list-group list-group-flush">
+            {% for item in recently_viewed %}
+            <li class="list-group-item">
+                <a href="{% url 'detail' item.id %}">{{ item.name }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}
