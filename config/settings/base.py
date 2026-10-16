@@ -29,7 +29,11 @@ SECRET_KEY = 'django-insecure-cpnem$(=1aox-4_=z##zdw7c=&-ji3jg12#i48se*=jcm#7$(x
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost,127.0.0.1').split(',')
+ALLOWED_HOSTS = [
+    'skillbridge-ems-22u4.onrender.com',
+    'localhost',
+    '127.0.0.1',
+]
 
 
 # Application definition
