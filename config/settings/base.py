@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-cpnem$(=1aox-4_=z##zdw7c=&-ji3jg12#i48se*=jcm#7$(x
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost,127.0.0.1').split(',')
 
 
 # Application definition
@@ -193,3 +193,5 @@ CACHES = {
         'LOCATION': 'ems-cache',
     }
 }
+
+CSRF_TRUSTED_ORIGINS = ['https://*.onrender.com']
